@@ -4,5 +4,19 @@
     <string name="app_name">Research</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="activity_array">
+        <item>Start</item>
+        <item>Sample</item>
+        <item>Main</item>
+        <item>Login</item>
+        <item>Search</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="title_login_activity">Login Screen</string>
+    <string name="title_main_activity">Main Screen</string>
+    <string name="title_sample_activity">Sample Screen</string>
 
 </resources>
