@@ -166,8 +166,9 @@ public class MainActivityTest extends Activity {
 
         }
 
-
-       // startActivity(new Intent(this, MainActivity.class)); mActivityTitles[position]+"Activity"
+//enum 2 field - idString end title
+     //   startActivity(new Intent(this, MainActivity.class));
+      //  mActivityTitles[position]+"Activity".class
 
     }
 

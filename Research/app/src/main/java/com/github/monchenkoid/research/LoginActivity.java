@@ -15,7 +15,7 @@ import com.github.monchenkoid.research.utils.AuthUtils;
  */
 public class LoginActivity extends ActionBarActivity {
 
-    EditText edit_text;
+    EditText editText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,7 @@ public class LoginActivity extends ActionBarActivity {
 
 
         Button cancelBtn = (Button) findViewById(R.id.cancel_btn);
-        edit_text = (EditText) findViewById(R.id.edit_text);
+        editText = (EditText) findViewById(R.id.edit_text);
         cancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,8 +39,8 @@ public class LoginActivity extends ActionBarActivity {
     }
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        edit_text.setRawInputType(InputType.TYPE_CLASS_TEXT);
-        edit_text.setText("lol");
+        editText.setRawInputType(InputType.TYPE_CLASS_TEXT);
+        editText.setText("lol");
         //savedInstanceState.getString("result"));
 
     }
