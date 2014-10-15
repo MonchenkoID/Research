@@ -1,7 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="56dip"
+    android:background="#db4437"
+    android:id="@+id/top_bar">
+    <ImageView
+        android:layout_width="56dip"
+        android:layout_height="48dip"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:src="@drawable/photo"
+        android:id="@+id/photo"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableRight="@android:drawable/arrow_down_float"
 
-</LinearLayout>
+        android:id="@+id/google_name"
+        android:layout_toRightOf="@+id/photo"
+        android:text="Vladimir"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:textAppearance="@android:style/TextAppearance.Medium"/>
+    <ImageView
+        android:layout_width="48dip"
+        android:layout_height="match_parent"
+        android:paddingRight="16dip"
+        android:paddingLeft="8dip"
+        android:src="@drawable/abc_ic_menu_moreoverflow_normal_holo_dark"
+        android:id="@+id/menu_google"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+    <ImageView
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:paddingRight="8dip"
+        android:paddingLeft="8dip"
+        android:src="@drawable/abc_ic_voice_search"
+        android:id="@+id/msg_google"
+        android:layout_toLeftOf="@+id/menu_google"
+        android:layout_centerVertical="true" />
+    <ImageView
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:paddingRight="8dip"
+        android:paddingLeft="8dip"
+        android:src="@android:drawable/ic_menu_myplaces"
+        android:id="@+id/cont_google"
+        android:layout_toLeftOf="@+id/msg_google"
+        android:layout_centerVertical="true" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="56dip"
+    android:layout_below="@id/top_bar">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="48dip"
+       android:paddingLeft="16dip"
+       android:text="Все"
+       android:textAlignment="center"
+       android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
