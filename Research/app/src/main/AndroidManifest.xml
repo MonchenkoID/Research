@@ -40,6 +40,9 @@
         <activity
             android:name=".listexample.ExampleListActivity"
             android:label="@string/title_sample_activity"/>
+        <activity
+            android:name=".GridActivity"
+            android:label="@string/title_sample_activity"/>
     </application>
 
 </manifest>

@@ -77,7 +77,7 @@ public class MainActivityTest extends Activity {
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
         if (savedInstanceState == null) {
-            selectItem(6);
+            selectItem(7);
         }
     }
 
@@ -164,6 +164,9 @@ public class MainActivityTest extends Activity {
                 break;
             case 5:
                 startActivity(new Intent(this, ExampleListActivity.class));
+                break;
+            case 6:
+                startActivity(new Intent(this, GridActivity.class));
                 break;
             default:;
 

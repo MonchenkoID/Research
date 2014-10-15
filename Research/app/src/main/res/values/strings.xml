@@ -11,6 +11,7 @@
         <item>Login</item>
         <item>Search</item>
         <item>ListExample</item>
+        <item>GridExample</item>
     </string-array>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
