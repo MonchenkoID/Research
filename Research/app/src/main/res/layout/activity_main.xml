@@ -15,11 +15,7 @@
             android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
             android:background="#666"
             android:text="Hello Activity"/>
-        <View
-            android:layout_width="0dip"
-            android:layout_weight="0.5"
-            android:background="#666"
-            android:layout_height="?attr/actionBarSize"/>
+
         <ImageView
             android:src="@android:drawable/ic_menu_close_clear_cancel"
             android:paddingLeft="16dip"

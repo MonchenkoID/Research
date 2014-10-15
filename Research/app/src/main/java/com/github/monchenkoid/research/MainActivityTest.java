@@ -20,6 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.github.monchenkoid.research.listexample.ExampleListActivity;
 
 public class MainActivityTest extends Activity {
     private DrawerLayout mDrawerLayout;
@@ -76,7 +77,7 @@ public class MainActivityTest extends Activity {
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
         if (savedInstanceState == null) {
-            selectItem(5);
+            selectItem(6);
         }
     }
 
@@ -161,13 +162,16 @@ public class MainActivityTest extends Activity {
             case 4:
                 startActivity(new Intent(this, SearchActivity.class));
                 break;
+            case 5:
+                startActivity(new Intent(this, ExampleListActivity.class));
+                break;
             default:;
 
 
         }
 
 //enum 2 field - idString end title
-     //   startActivity(new Intent(this, MainActivity.class));
+     //   startActivity(new Intent(this, ExampleListActivity.class));
       //  mActivityTitles[position]+"Activity".class
 
     }
