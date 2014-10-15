@@ -19,16 +19,7 @@ public class ExampleListActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 
 		initPeopleList();
-		
-		// the second parameter in this constructor is useless.
-		//ListAdapter adapter = new BadPeopleAdapter(this, 0, mPeople);
-		
-		// although this alternate constructor is better, it still overrides
-		// ArrayAdapter, which is misleading.
-		//ListAdapter adapter = new BadPeopleAdapter(this, mPeople);
-		
-		// this final version extends BaseAdapter and makes the most
-		// sense semantically. 
+
 		ListAdapter adapter = new GoodPeopleAdapter(this, mPeople);
 		
 		setListAdapter(adapter);

@@ -63,7 +63,8 @@
 <RelativeLayout
     android:layout_width="wrap_content"
     android:layout_height="56dip"
-    android:layout_below="@id/top_bar">
+    android:layout_below="@id/top_bar"
+    android:layout_marginBottom="1dip">
    <TextView
        android:layout_width="match_parent"
        android:layout_height="48dip"
@@ -71,6 +72,15 @@
        android:text="Все"
        android:textAlignment="center"
        android:gravity="center_vertical"/>
+    <ImageView
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:paddingRight="20dip"
+        android:paddingLeft="4dip"
+        android:src="@android:drawable/arrow_up_float"
+        android:id="@+id/down_google"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
     </RelativeLayout>
 
 
