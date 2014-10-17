@@ -3,8 +3,6 @@ package com.github.monchenkoid.research;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.text.InputType;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 

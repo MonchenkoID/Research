@@ -1,8 +1,5 @@
 package com.github.monchenkoid.research.listexample;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.ListActivity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,6 +7,9 @@ import android.os.Bundle;
 import android.widget.ListAdapter;
 
 import com.github.monchenkoid.research.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ExampleListActivity extends ListActivity {
 	private List<Person> mPeople;

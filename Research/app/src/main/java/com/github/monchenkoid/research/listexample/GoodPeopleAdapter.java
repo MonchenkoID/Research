@@ -1,7 +1,5 @@
 package com.github.monchenkoid.research.listexample;
 
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.monchenkoid.research.R;
+
+import java.util.List;
 
 public class GoodPeopleAdapter extends BaseAdapter {
 	private LayoutInflater mInflater;
