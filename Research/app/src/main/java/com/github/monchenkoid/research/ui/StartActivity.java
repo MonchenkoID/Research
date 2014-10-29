@@ -1,9 +1,11 @@
-package com.github.monchenkoid.research;
+package com.github.monchenkoid.research.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
+import com.github.monchenkoid.research.ui.LoginActivity;
+import com.github.monchenkoid.research.ui.MainActivity;
 import com.github.monchenkoid.research.utils.AuthUtils;
 
 /**
@@ -22,6 +24,7 @@ public class StartActivity extends ActionBarActivity {
             startActivityForResult(new Intent(this, LoginActivity.class), REQUEST_LOGIN);
         }
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

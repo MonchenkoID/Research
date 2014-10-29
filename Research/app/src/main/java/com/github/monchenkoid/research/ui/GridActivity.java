@@ -1,9 +1,11 @@
-package com.github.monchenkoid.research;
+package com.github.monchenkoid.research.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
+
+import com.github.monchenkoid.research.R;
 
 public class GridActivity extends Activity {
 
@@ -13,7 +15,9 @@ public class GridActivity extends Activity {
     ArrayAdapter<String> adapter;
 
 
-    /** Called when the activity is first created. */
+    /**
+     * Called when the activity is first created.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

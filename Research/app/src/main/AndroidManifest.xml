@@ -2,47 +2,42 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.github.monchenkoid.research" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
+        android:name=".CoreApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivityTest"
-            android:label="@string/app_name">
+            android:name=".ui.StartActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".StartActivity"
-            android:label="@string/app_name" />
-
-        <activity
-            android:name=".LoginActivity"
+            android:name=".ui.LoginActivity"
             android:label="@string/title_login_activity"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:label="@string/title_main_activity"
-            android:launchMode="singleTask"/>
+            android:launchMode="singleTask"
+            />
+
         <activity
-            android:name=".SampleActivity"
+            android:name=".ui.DetailsActivity"
             android:label="@string/title_sample_activity"
-            android:parentActivityName=".MainActivity"
-            android:launchMode="singleTop"/>
+            android:parentActivityName=".ui.MainActivity"
+            />
         <activity
-            android:name=".ResultActivity"
-            android:label="@string/title_sample_activity"/>
-        <activity
-            android:name=".SearchActivity"
-            android:label="@string/title_sample_activity"/>
-        <activity
-            android:name=".listexample.ExampleListActivity"
-            android:label="@string/title_sample_activity"/>
-        <activity
-            android:name=".GridActivity"
-            android:label="@string/title_sample_activity"/>
+            android:name=".ui.AsyncTaskLoaderActivity"
+            android:label="@string/title_sample_activity"
+
+            />
     </application>
 
 </manifest>

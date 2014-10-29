@@ -1,4 +1,4 @@
-package com.github.monchenkoid.research;
+package com.github.monchenkoid.research.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.github.monchenkoid.research.R;
 
 /**
  * Created by shiza on 08.10.2014.
@@ -28,16 +30,18 @@ public class ResultActivity extends Activity implements View.OnClickListener {
         btnOK = (Button) findViewById(R.id.btnOK);
         btnOK.setOnClickListener(this);
     }
+
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
         outState.putString("result", etName.getText().toString());
         Log.d(LOG_TAG, "onSaveInstanceState");
     }
+
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         etName.setRawInputType(InputType.TYPE_CLASS_TEXT);
-      //  etName.setText(savedInstanceState.getString("result"));
+        //  etName.setText(savedInstanceState.getString("result"));
         Log.d(LOG_TAG, "onRestoreInstanceState");
     }
 

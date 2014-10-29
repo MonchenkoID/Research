@@ -12,32 +12,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExampleListActivity extends ListActivity {
-	private List<Person> mPeople;
+    private List<Person> mPeople;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-		initPeopleList();
+        initPeopleList();
 
-		ListAdapter adapter = new GoodPeopleAdapter(this, mPeople);
-		
-		setListAdapter(adapter);
-	}
+        ListAdapter adapter = new GoodPeopleAdapter(this, mPeople);
 
-	private void initPeopleList() {
-		mPeople = new ArrayList<Person>();
-		addPersonWith("afsdfmsldfmsldnfsldfnsdknfsldkfsd", "123", R.drawable.bruce);
-		addPersonWith("ldfsdl;fmsdl", "445", R.drawable.mumbo);
-		addPersonWith("sdfsdfsdfcxcvwertjfjfjfjfjgjfjfg", "75", R.drawable.gruntilda);
-		addPersonWith("vffdjdabvbvavjsdjv", "345", R.drawable.zero);
-	}
+        setListAdapter(adapter);
+    }
 
-	private void addPersonWith(String name, String latestMessage, int avatarRes) {
-		Bitmap avatar = BitmapFactory.decodeResource(getResources(), avatarRes);
-		Person person = new Person(name);
-		person.setLatestMessage(latestMessage);
-		person.setAvatar(avatar);
-		mPeople.add(person);
-	}
+    private void initPeopleList() {
+        mPeople = new ArrayList<Person>();
+        addPersonWith("afsdfmsldfmsldnfsldfnsdknfsldkfsd", "123", R.drawable.bruce);
+        addPersonWith("ldfsdl;fmsdl", "445", R.drawable.mumbo);
+        addPersonWith("sdfsdfsdfcxcvwertjfjfjfjfjgjfjfg", "75", R.drawable.gruntilda);
+        addPersonWith("vffdjdabvbvavjsdjv", "345", R.drawable.zero);
+    }
+
+    private void addPersonWith(String name, String latestMessage, int avatarRes) {
+        Bitmap avatar = BitmapFactory.decodeResource(getResources(), avatarRes);
+        Person person = new Person(name);
+        person.setLatestMessage(latestMessage);
+        person.setAvatar(avatar);
+        mPeople.add(person);
+    }
 }

@@ -1,4 +1,4 @@
-package com.github.monchenkoid.research;
+package com.github.monchenkoid.research.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.github.monchenkoid.research.R;
+import com.github.monchenkoid.research.ui.ResultActivity;
 
 /**
  * Created by shiza on 08.10.2014.
@@ -15,7 +18,9 @@ public class SearchActivity extends Activity implements View.OnClickListener {
     TextView tvName;
     Button btnName;
 
-    /** Called when the activity is first created. */
+    /**
+     * Called when the activity is first created.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +41,9 @@ public class SearchActivity extends Activity implements View.OnClickListener {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (data == null) {return;}
+        if (data == null) {
+            return;
+        }
         String name = data.getStringExtra("name");
         tvName.setText("Result : " + name);
     }
